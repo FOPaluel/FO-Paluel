@@ -221,7 +221,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 32px;
     }
-    @media(max-width:640px) { .opposition-layout { grid-template-columns: 1fr; } }
+    @media(max-width:700px) { .opposition-layout { grid-template-columns: 1fr; } }
 
     .opposition-text p { color: #333; font-size: .97rem; margin-bottom: 16px; }
     .opposition-text strong { color: var(--fo-blue); }
@@ -299,7 +299,7 @@
     /* ── REVENDICATIONS ── */
     .rev-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
       margin-top: 8px;
     }
@@ -335,16 +335,14 @@
     .demands-box h3 { font-size: 1rem; font-weight: 700; margin-bottom: 16px; color: var(--fo-dark); }
     .demands-box ul { list-style: none; padding: 0; }
     .demands-box li {
-      padding: 8px 0;
+      padding: 12px 0;
       border-bottom: 1px solid #edf0f7;
       font-size: .95rem;
       color: #333;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
+      line-height: 1.6;
     }
     .demands-box li:last-child { border-bottom: none; }
-    .demands-box li::before { content: '➜'; color: var(--fo-blue); font-weight: 700; flex-shrink: 0; }
+    .demands-box li::before { content: '➜ '; color: var(--fo-blue); font-weight: 700; }
     .demands-box a { color: var(--fo-blue); font-weight: 600; }
 
     /* ── FOOTER ── */
